@@ -5,8 +5,9 @@ public class APLine {
     value2 = b;
     value3 = c;
   }  
-  public int getSlope () {
-    return (-value1/value2);
+  public double getSlope () {
+    double nVal = (-value1/value2);
+    return nVal;
   }
   public boolean isOnLine (int x, int y) {
     if ((value1*x) + (value2*y) + (value3) == 0) {
